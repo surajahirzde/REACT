@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.head {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(116, 42, 42);
+  text-align: center;
+  margin: 2rem;
+}
+.details {
+  padding: 20px;
+  width: 90%;
+  background-color: rgb(150, 174, 237);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: auto;
+}
+.details .address {
+  height: 280px;
+border-radius: 10px;
+  color: black;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* box-shadow: 0 0 35px rgba(219, 219, 241, 0.866); */
+}
+.details .address:hover{
+  box-shadow: 0 0 35px rgba(22, 22, 35, 0.866);
+}
+.details .address img {
+  height: 50px;
+  width: 50px;
+}
+.details .address h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+.details .address p {
+  width: 300px;
+  font-size: 18px;
+}
+
+/* EMAIL */
+
+.details .email {
+    border-radius: 10px;
+  height: 280px;
+  color: black;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0 0 35px rgba(219, 219, 241, 0.866);
+}
+.details .email:hover{
+    box-shadow: 0 0 35px rgba(22, 22, 35, 0.866);
+  }
+.details .email img {
+  height: 50px;
+  width: 50px;
+}
+.details .email h1 {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+.details .email p {
+  width: 300px;
+  font-size: 18px;
+}
+.details .email p a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* PHONEE */
+
+.details .phone {
+    border-radius: 10px;
+  height: 280px;
+  color: black;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0 0 35px rgba(219, 219, 241, 0.866);
+}
+.details .phone:hover{
+    box-shadow: 0 0 35px rgba(22, 22, 35, 0.866);
+  }
+.details .phone img {
+  height: 50px;
+  width: 50px;
+}
+.details .phone h1 {
+  font-size: 20px;
+  color: blue;
+  font-weight: bold;
+}
+.details .phone p {
+  width: 300px;
+  font-size: 18px;
+}
+.details .phone p a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* media query starts from here  */
+
+@media screen and (max-width: 600px) {
+    .details {
+        flex-direction: column;
+    
+}
+}

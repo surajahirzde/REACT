@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+        gap: 3rem;
+}
+
+.myProfile {
+  height: calc(150vh - 60px);
+  width: 160vw;
+  background-size: cover;
+  background-position: 10% 30%;
+  background-repeat: no-repeat;
+  position: relative; 
+  border-radius: 0 0 45% 45%;
+  overflow: hidden;
+  transform: translateX(-20%);
+  box-shadow: 0 0 15px rgba(77, 46, 41, 0.866);
+}
+
+.overLay {
+  position: absolute;
+  inset: 0;
+  height: calc(190vh - 60px);
+  width: 100%;
+  color: white;
+  display: grid;
+
+  background-color: rgba(0, 0, 0, 0.769);
+}
+.overLay div h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+.overLay div {
+  margin: 0rem auto;
+  margin-top: 10rem;
+}
+.overLay div h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+.overLay div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+  margin-top: 2rem;
+  color: white;
+  background-color: #2828ec;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+}
+.overLay div button span {
+  font-size: 20px;
+}
+
+/* //////////////reponsive code begins here */
+
+@media screen and (max-width: 768px) {
+  .myProfile {
+    width: 100vw;
+    height: calc(85vh - 60px);
+    padding: 1rem;
+   transform: unset;
+  
+} 
+.overLay{
+  padding: 1rem;
+}
+.overLay div h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+}
+.overLay div h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+.overLay div button{
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 10px;
+}
+.overLay div button span {
+  font-size: 18px;
+}
+}

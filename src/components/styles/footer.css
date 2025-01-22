@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  margin-top: 2rem;
+  /* width: 100%; */
+  height: 300px;
+  background-color: rgb(37, 35, 35);
+  display: flex;
+  align-items: center;
+}
+.left {
+  padding: 2em;
+  width: 50%;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5rem;
+}
+.left .icon {
+  margin-top: -5rem;
+  display: flex;
+  align-items: center;
+}
+.left .icon svg {
+  font-size: 40px;
+  color: red;
+}
+.left .icon span {
+  color: white;
+  font-size: 28px;
+}
+.left p {
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 15px;
+}
+
+.right {
+  padding: 2em;
+  width: 50%;
+}
+.right .icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: -8rem;
+  margin-right: -15rem;
+}
+.right .icon svg {
+  font-size: 30px;
+  color: white;
+}
+.right .icon svg:hover {
+  color: rgb(78, 134, 239);
+}
+
+/* mediaquery starts from here  */
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 1rem;
+    height: 400px;
+    gap: 4rem;
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    padding: 1em;
+    gap: 0;
+    align-items: center;
+  }
+  .left .icon {
+    margin-top: 0;
+    margin-left: -2rem;
+  }
+  .left p {
+    font-size: 30px;
+  }
+  .right {
+    width: 100%;
+  }
+  .right .icon {
+    margin-top: 0;
+    margin-right: -2rem;
+  }
+}
