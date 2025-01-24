@@ -1,0 +1,24 @@
+
+.form{
+    padding-top: 1.5rem;
+    width: 100%;
+    background-color: rgba(55, 67, 232, 0.877);
+    border-radius: 5px;
+
+}
+.form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.form form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}

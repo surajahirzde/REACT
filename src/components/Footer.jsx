@@ -20,7 +20,6 @@ const Footer = () => {
             We give our best{" "}
           </p>
         </div>
-
         <div className="right">
           <div className="icon">
             <a
@@ -57,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p> Copyright © 2023 SURAJ YADAV</p>
+      <p style={{ textAlign: "center" }}> Copyright © 2023 SURAJ YADAV</p>
     </div>
   );
 };

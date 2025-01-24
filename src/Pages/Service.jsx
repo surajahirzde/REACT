@@ -1,19 +1,23 @@
 import "./styles/service.css";
 import wd from "../Assets/app-development.png";
-
 import react from "../Assets/atom.png";
 import mongodb from "../Assets/cloud-database.png";
 import express from "../Assets/eco-e.png";
-
 import node from "../Assets/node-js.png";
 import bootstrap from "../Assets/letter-b.png";
 import python from "../Assets/python.png";
 import js from "../Assets/js.png";
 import c from "../Assets/c-.png";
+import { useState } from "react";
+import ServiceForm from "./ServiceForm";
+import Popup from "./Popup";
 
 const Service = () => {
+  const [open, setOpen] = useState(false);
+  const service = () => setOpen(!open);
+
   return (
-    <div id="services" className="service">
+    <div id="services" className="service" onClick={service}>
       <h1 className="servicehead">Our Services</h1>
       <div className="heading">
         <h1>Complete Solution At one Place</h1>
@@ -66,6 +70,7 @@ const Service = () => {
           <h1>C</h1>
         </div>
       </div>
+      {open && <Popup cmp={<ServiceForm />} close={service} />}
     </div>
   );
 };

@@ -1,6 +1,14 @@
 import { FaRegHandPointRight } from "react-icons/fa";
 import myProfile from "../Assets/profile.jpg";
+import { useState } from "react";
+import "../Pages/mini/Form";
+import Form from "../Pages/mini/Form";
+import Popup from "./Popup";
+  
 const HeroPage = () => {
+  const [open, setOpen] = useState(false);
+
+  const appointment = () => setOpen(!open);
   return (
     <div
       id="home"
@@ -14,7 +22,7 @@ const HeroPage = () => {
             This is a short description eleborating the service you have
             mentioned above
           </h2>
-          <button>
+          <button onClick={appointment}>
             <span>
               <FaRegHandPointRight />{" "}
             </span>{" "}
@@ -22,7 +30,8 @@ const HeroPage = () => {
           </button>
         </div>
       </div>
-    </div>
+      {open && <Popup cmp={<Form />}  close={appointment} />}
+    </div>  
   );
 };
 

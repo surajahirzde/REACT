@@ -1,33 +1,25 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 .footer {
   margin-top: 2rem;
-  /* width: 100%; */
-  height: 300px;
-  background-color: rgb(37, 35, 35);
+  width: 100%;
+  height: auto;
   display: flex;
-  align-items: center;
+  background-color: rgb(37, 35, 35);
 }
 .left {
   padding: 2em;
-  width: 50%;
-  /* height: 300px; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5rem;
+  gap: 1rem;
 }
 .left .icon {
-  margin-top: -5rem;
   display: flex;
   align-items: center;
 }
 .left .icon svg {
   font-size: 40px;
-  color: red;
+  fill:red;
 }
 .left .icon span {
   color: white;
@@ -48,15 +40,14 @@
 
 .right {
   padding: 2em;
-  width: 50%;
+  background-color: red;
+  margin-left: auto;
 }
 .right .icon {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 2rem;
-  margin-top: -8rem;
-  margin-right: -15rem;
 }
 .right .icon svg {
   font-size: 30px;
