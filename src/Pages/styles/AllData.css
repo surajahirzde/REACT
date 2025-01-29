@@ -1,0 +1,38 @@
+table {
+  width: 100%;
+
+  overflow: auto;
+  border-collapse: collapse;
+  margin-top: 5px;
+  background: white;
+}
+.tableresp{
+  /* padding: 0.1rem; */
+  width: 100%;
+  overflow: auto;
+  background: white;
+}
+.design{
+  font-size: 30px;
+  background-color: rgb(18, 129, 82);
+  /* width: 130%; */
+  font-weight: bold;
+  color: rgb(244, 242, 242);
+  text-align: center;
+  padding: 0.2rem;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

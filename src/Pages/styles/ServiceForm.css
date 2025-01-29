@@ -6,6 +6,18 @@
     border-radius: 5px;
 
 }
+.form h3{
+    font-size: 20px;
+    width: max-content;
+    font-weight: bold;
+    padding: 0 10PX;
+    border-radius: 1rem;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    /* text-align: center;  */
+    box-shadow:0 0 15px rgba(230, 229, 233, 0.866);
+
+}
 .form form{
     width: 100%;
     display: flex;

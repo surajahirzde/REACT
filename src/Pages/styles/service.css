@@ -73,5 +73,16 @@
   font-size: 20px;
   font-weight: bold;
 }
+.last{
+  background-color: rgb(36, 230, 156);
+  color: white;
+  /* margin-left: 11.2rem; */
+}
+.last:hover{
+  background-color: white;
+  color: red;
+
+}
+
 
 /* media query for responsive design   here */

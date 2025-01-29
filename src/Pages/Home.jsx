@@ -1,5 +1,6 @@
 
 import About from "./About";
+
 import ContactUs from "./ContactUs";
 import HeroPage from "./HeroPage";
 import Service from "./Service";
@@ -13,6 +14,7 @@ const Home = () => {
       <About />
       <Service  />
       <ContactUs />
+      {/* <AllData /> */}
      
     </div>
   );

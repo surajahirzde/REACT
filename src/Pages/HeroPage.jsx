@@ -4,7 +4,7 @@ import { useState } from "react";
 import "../Pages/mini/Form";
 import Form from "../Pages/mini/Form";
 import Popup from "./Popup";
-  
+
 const HeroPage = () => {
   const [open, setOpen] = useState(false);
 
@@ -30,8 +30,8 @@ const HeroPage = () => {
           </button>
         </div>
       </div>
-      {open && <Popup cmp={<Form />}  close={appointment} />}
-    </div>  
+      {open && <Popup cmp={<Form />} close={appointment} />}
+    </div>
   );
 };
 

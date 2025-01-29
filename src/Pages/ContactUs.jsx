@@ -18,7 +18,6 @@ const ContactUs = () => {
           </p>
         </div>
 
-      
         <div className="email">
           <img src={gmail} alt="" />
           <h1>Email us</h1>
